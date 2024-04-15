@@ -1,0 +1,15 @@
+<div class="text-center card mb-2 bg-dark">
+    <!-- <img 
+        [src]="gif.images.downsized_medium.url" 
+        [alt]="gif.title"
+        class="card-img-top"> -->
+
+    <shared-lazy-image
+        [imageUrl]="gif.images.downsized_medium.url"
+        [imageAlt]="gif.title || 'No title to display.'"
+    ></shared-lazy-image>
+    
+    <div class="card-body text-white">
+        <p class="card-text"> {{ gif.title || 'No title to display.' }} </p>
+    </div>
+</div>
